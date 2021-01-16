@@ -10,6 +10,7 @@
         <main>
             <header>
                 <h1>Drea's Daily Journal</h1>
+                <img src= "https://cdn.xl.thumbs.canstockphoto.com/photo-of-a-journal-diary-personal-journal-stock-images_csp0610845.jpg"  alt="journal photo-of-a-journal-diary-personal-journal-stock-images_csp0610845">
             </header>
 
             <section>
@@ -17,22 +18,30 @@
                     <h2>Daily Journal</h2>
                 <form action="">
                     <fieldset>
-                        <label  class= "date" for="journal date">Date of Entry</label>
-                        <input type="date" name="journalDate" id="journalDate">
-                        <br>
-                        <label class= "concepts" for="concepts">Concepts Covered</label>
-                        <input type="concepts" name="Concepts Covered" id="ConcetpsCovered">
-                        <br>
-                        <label class="label" for="">Journal Entry</label>
-                        <textarea name="Journal Entry" id="" cols="30" rows="10"></textarea>
-                        <br>
-                        <label class="mood" for="">Mood for the Day</label>
-                        <select name="mood" id="moods">
-                            <option value="Happy">Happy</option>
-                            <option value="Acieved">Successful</option>
-                            <option value="Sad">Sad</option>
-                            <option value="Frustrated">WTF</option>                            
-                        </select>
+                        <div class="trydate">
+                            <label  class= "date container_date" for="journal date">Date of Entry</label>
+                            <input  class= "container_date" type="date" name="journalDate" id="journalDate">
+                        </div>
+
+                        <div class= "tryConcepts">
+                            <label class= "concepts container_concepts" for="concepts">Concepts Covered</label>
+                            <input class= "container_concepts" type="concepts" name="Concepts Covered" id="ConcetpsCovered">
+                        </div>
+
+                        <div class="tryLabel">
+                            <label class="label" for="">Journal Entry</label>
+                            <textarea class= "container_text"name="Journal Entry" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    
+                        <div class="tryMood">
+                            <label class="mood" for="">Mood for the Day</label>
+                            <select class="container_mood" name="mood" id="moods">
+                                <option value="Happy">Happy</option>
+                                <option value="Acieved">Successful</option>
+                                <option value="Sad">Sad</option>
+                                <option value="Frustrated">WTF</option>                            
+                            </select>
+                        </div>
                         <br>
                         </fieldset>
                         <button>Record Journal Entry</button>
