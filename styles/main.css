@@ -1,6 +1,6 @@
 .trydate {
     display: flex;
-    border: solid 2px darkorchid; 
+    border: solid 2px grey; 
     flex-direction: column;
     height: 50px;
     width: 50%;
@@ -40,7 +40,7 @@
 
 .tryLabel {
     display: flex;
-    border: solid 2px darkorchid; 
+    border: solid 2px grey; 
     flex-direction: column;
     height: 50px;
     width: 50%;
