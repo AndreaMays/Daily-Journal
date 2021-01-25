@@ -23,6 +23,10 @@ export const EntryListComponent = () => {
             HTML representation of a single entry
         */
        entryHTMLRepresentations += JournalEntryComponent(entries)
-        entryLog.innerHTML += ???
+        entryLog.innerHTML += `
+        <article class=".journalEntry">
+        ${entryHTMLRepresentations}
+        </article>
+        `
     }
 }
