@@ -7,29 +7,7 @@
  */
 
 // This is the original data.
-const journal = [
-    {
-        id: 1,
-        date: "07/24/2025",
-        concept: "HTML & CSS",
-        entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        mood: "Ok"
-    },
-    {
-        id: 2,
-        date: "01/22/2021",
-        concept: "Fetching",
-        entry: "We talked about API's and fetching and .then... my brain is dead, but glad i saw it in prework before now",
-        mood: "Ok"
-    },
-    {
-        id: 3,
-        date: "01/20/2021",
-        concept: "Countries Group Project",
-        entry: "My group project went better this time around, but I seriously hate talking in front of everyone",
-        mood: "Happy"
-    },
-]
+const journal = []
 
 /*
     You export a function that provides a version of the
@@ -41,4 +19,12 @@ export const useJournalEntries = () => {
             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
     )
     return sortedByDate
+}
+
+export const getEntries = () => {
+    return fetch("http://localhost:8088/entries") // Fetch from the API
+        .then(response => response.json)  // Parse as JSON
+        .then(jsonEntries => {
+            journal = jsonEntries // What should happen when we finally have the array?
+        })
 }
