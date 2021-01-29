@@ -24,9 +24,14 @@ export const EntryListComponent = () => {
         */
        entryHTMLRepresentations += JournalEntryComponent(entries)
         entryLog.innerHTML += `
+ AM-Finishing-DJ-chapter12
             <article class="entryList"
                 ${entryHTMLRepresentations}
             </article>
+        <article class=".journalEntry">
+        ${entryHTMLRepresentations}
+        </article>
+
         `
     }
 }
