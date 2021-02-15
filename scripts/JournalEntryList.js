@@ -22,16 +22,17 @@ export const EntryListComponent = () => {
             Invoke the component that returns an
             HTML representation of a single entry
         */
-       entryHTMLRepresentations += JournalEntryComponent(entries)
+       entryHTMLRepresentations += JournalEntryComponent(entry)
         entryLog.innerHTML += `
- AM-Finishing-DJ-chapter12
-            <article class="entryList"
-                ${entryHTMLRepresentations}
-            </article>
+        <article class="entryList"
+        ${entryHTMLRepresentations}
+        </article>
         <article class=".journalEntry">
         ${entryHTMLRepresentations}
         </article>
-
+        
         `
     }
 }
+
+// AM-Finishing-DJ-chapter12
